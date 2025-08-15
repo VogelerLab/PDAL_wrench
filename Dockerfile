@@ -10,8 +10,7 @@ RUN ash <<'EOF'
     set -e  # Exit on error
 
     # Install Alpine Linux packages for building PDAL Wrench
-    apk update
-    apk add \
+    apk add --no-cache \
         cmake \
         g++ \
         git \
